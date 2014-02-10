@@ -99,6 +99,7 @@ docker build -t local/elasticsearch-0.20.6 /vagrant/docker/elasticsearch-0.20.6/
 ##
 
 echo "
+alias dockerkill='docker kill `docker ps -a -q`'
 " > /home/vagrant/.bash_aliases
 
 
