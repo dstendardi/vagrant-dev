@@ -1,5 +1,5 @@
 elasticsearch:
-  image: dockerfile/elasticsearch
+  image: local/elasticsearch-0.20.6
   ports: 
     - 9200:9200
 hbase:
