@@ -95,7 +95,7 @@ service docker restart
 sleep 2
 
 # build docker images here
-# docker -H 127.0.0.1:4243 build -t rethinkdb /vagrant/docker/rethinkdb/
+docker -H 127.0.0.1:4243 build -t local/hbase-cdh4.1.2 /vagrant/docker/hbase-cdh4.1.2/
 
 
 ##

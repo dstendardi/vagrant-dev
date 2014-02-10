@@ -2,8 +2,16 @@ name: local
 ships:
   local:   
     ip: 127.0.0.1
-    ports: {elasticsearch_rest: 9200}
+    ports: {elasticsearch_rest: 9200, hbase_zookeeper: 2181}
 services:
+  hbase:
+    image: local/hbase-cdh4.1.2
+    command: master start
+    instances:
+      hbase-cdh4.1.2:
+        ship: local
+        ports:
+          hbase_zookeeper: 2181
   elasticsearch:
     image: dockerfile/elasticsearch
     instances:
