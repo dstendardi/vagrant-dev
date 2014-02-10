@@ -93,7 +93,7 @@ fi
 echo "DOCKER_OPTS=\"-H 127.0.0.1:4243\"" > /etc/default/docker
 service docker restart
 sleep 2
-docker -H 127.0.0.1:4243 build -t rethinkdb /vagrant/ops/docker/rethinkdb/
+docker -H 127.0.0.1:4243 build -t rethinkdb /vagrant/docker/rethinkdb/
 
 ##
 # Nodejs
