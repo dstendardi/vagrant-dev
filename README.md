@@ -11,11 +11,12 @@ Offers a local environment for developers using vagrant and docker.
 
 ## Available backends
 
-| service       | status |
-| mysql         | todo   |
-| elasticsearch | todo   |
-| hbase         | todo   |
-| zoopkeeper    | todo   |
-| neo4j         | todo   |
-| solr          | todo   |
+| service       | version | status | docker image |
+|---------------|---------|--------|--------------|
+| mysql         |         | todo   |              |
+| elasticsearch |         | todo   |              |
+| hbase         |         | todo   |              |
+| zoopkeeper    |         | todo   |              |
+| neo4j         |         | todo   |              |
+| solr          |         | todo   |              |
 
