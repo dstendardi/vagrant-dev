@@ -1,6 +1,6 @@
 # Vagrant dev
 
-Offers a local environment for developers using Vagrant and Docker.
+Offers a local environment for developers using Vagrant and Docker and Maestro-ng.
 
 ## Setup 
 
@@ -11,13 +11,13 @@ Offers a local environment for developers using Vagrant and Docker.
 
 ## Available backends
 
-| service       | version | status | docker image |
-|---------------|---------|--------|--------------|
-| mysql         |         | todo   |              |
-| memcached     |         | todo   |              |
-| elasticsearch |         | todo   |              |
-| hbase         |         | todo   |              |
-| zookeeper     |         | todo   |              |
-| neo4j         |         | todo   |              |
-| solr          |         | todo   |              |
+| service       | version  | status | docker image |
+|---------------|----------|--------|--------------|
+| mysql         |          | todo   |              |
+| memcached     |          | todo   |              |
+| elasticsearch |          | todo   |              |
+| hbase         | cdh4.1.2 | todo   |              |
+| zookeeper     |          | todo   |              |
+| neo4j         |          | todo   |              |
+| solr          |          | todo   |              |
 
