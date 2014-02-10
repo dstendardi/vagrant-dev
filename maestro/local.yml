@@ -1,0 +1,25 @@
+name: demo
+ships:
+  local:   
+    ip: 127.0.0.1
+    ports: {rest: 9200, admin: 8080}
+services:
+  rethinkdb:
+    image: rethinkdb
+    instances:
+       rt01: 
+         ship: local
+         ports:
+           admin: 8080
+           driver: 28015
+         volumes: 
+           /var/log/rethinkdb: /var/log/rethinkdb
+  elasticsearch:
+    image: dockerfile/elasticsearch
+    instances:
+      es01:
+        ship: local
+        ports:
+          rest: 9200
+        volumes:
+          /var/log/elasticsearch: /var/log/elasticsearch
