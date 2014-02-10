@@ -1,8 +1,8 @@
 elasticsearch:
-  image: local/elasticsearch-0.20.6
+  build: docker/elasticsearch-0.20.6
   ports: 
     - 9200:9200
 hbase:
-  image: local/hbase-cdh4.1.2
+  build: docker/hbase-cdh4.1.2
   ports:
     - 2181:2181
