@@ -13,7 +13,7 @@ Offers a local environment for developers using Vagrant and Docker and Fig.
 
 | service       | version  | status | docker image               |
 |---------------|----------|--------|----------------------------|
-| mysql         |          | todo   |                            |
+| mysql         | 5.5      | done   | orchardup/mysql            |
 | memcached     |          | todo   |                            |
 | elasticsearch | 0.20.6   | done   | local/elasticsearch-0.20.6 |
 | hbase         | cdh4.1.2 | done   | local/hbase-cdh4.1.2       |
