@@ -74,29 +74,23 @@ sed -i -e 's/# Example aliases/source ~\/.bash_aliases/gi' ~vagrant/.zshrc
 chsh -s /bin/zsh vagrant
 
 ##
-# Maestro
+# Fig
 ##
 
-cd /tmp
-
-if [ ! -d "maestro-ng" ]; then
-  git clone https://github.com/signalfuse/maestro-ng.git
-  cd maestro-ng
-  pip install . 
-fi
-
+pip install fig
 
 
 ##
 # Docker
 ##
-
-echo "DOCKER_OPTS=\"-H 127.0.0.1:4243\"" > /etc/default/docker
+echo "" > /etc/default/docker
 service docker restart
 sleep 2
 
+#echo "DOCKER_OPTS=\"-H 127.0.0.1:4243\"" > /etc/default/docker
+
 # build docker images here
-docker -H 127.0.0.1:4243 build -t local/hbase-cdh4.1.2 /vagrant/docker/hbase-cdh4.1.2/
+docker build -t local/hbase-cdh4.1.2 /vagrant/docker/hbase-cdh4.1.2/
 
 
 ##
@@ -104,8 +98,6 @@ docker -H 127.0.0.1:4243 build -t local/hbase-cdh4.1.2 /vagrant/docker/hbase-cdh
 ##
 
 echo "
-alias m='python -m maestro'
-alias docker='docker -H 127.0.0.1:4243'
 " > /home/vagrant/.bash_aliases
 
 

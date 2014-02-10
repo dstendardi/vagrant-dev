@@ -1,0 +1,8 @@
+elasticsearch:
+  image: dockerfile/elasticsearch
+  ports: 
+    - 9200:9200
+hbase:
+  image: local/hbase-cdh4.1.2
+  ports:
+    - 2181:2181

@@ -1,13 +1,13 @@
 # Vagrant dev
 
-Offers a local environment for developers using Vagrant and Docker and Maestro-ng.
+Offers a local environment for developers using Vagrant and Docker and Fig.
 
 ## Setup 
 
 1. Get [Vagrant](http://www.vagrantup.com/downloads.html) 1.4.3
 2. `vagrant up`
 3. `vagrant ssh`
-4. `m start < src/maestro/local.yml`
+4. `cd src && fig up`
 
 ## Available backends
 
