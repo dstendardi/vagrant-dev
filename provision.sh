@@ -63,8 +63,11 @@ fi
 # Create a new zsh configuration from the provided template
 cp ~vagrant/.oh-my-zsh/templates/zshrc.zsh-template ~vagrant/.zshrc
 
+# Change ownership of .zshrc
+chown vagrant: ~vagrant/.zshrc
+
 # Customize theme
-sed -i -e 's/ZSH_THEME=".*"/ZSH_THEME="bira"/' ~vagrant/.zshrc
+sed -i -e 's/ZSH_THEME=".*"/ZSH_THEME="philips"/' ~vagrant/.zshrc
 
 # add aliases
 sed -i -e 's/# Example aliases/source ~\/.bash_aliases/gi' ~vagrant/.zshrc
