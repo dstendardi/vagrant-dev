@@ -21,3 +21,6 @@ Offers a local environment for developers using Vagrant and Docker and Fig.
 | neo4j         |          | todo   |                            |
 | solr          |          | todo   |                            |
 
+## Todo
+
+ * Autogenerate docker images from provisionners like puppet using packer.
