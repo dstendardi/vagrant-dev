@@ -16,5 +16,4 @@ EXPOSE 9200
 EXPOSE 9300
 
 VOLUME ["/var/data/elasticsearch"]
-ENTRYPOINT ["/usr/share/elasticsearch/bin/elasticsearch"]
-CMD ["-f"]
+CMD ["/usr/share/elasticsearch/bin/elasticsearch", "-f"]
