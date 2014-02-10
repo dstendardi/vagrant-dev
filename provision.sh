@@ -93,19 +93,18 @@ fi
 echo "DOCKER_OPTS=\"-H 127.0.0.1:4243\"" > /etc/default/docker
 service docker restart
 sleep 2
-docker -H 127.0.0.1:4243 build -t rethinkdb /vagrant/docker/rethinkdb/
+
+# build docker images here
+# docker -H 127.0.0.1:4243 build -t rethinkdb /vagrant/docker/rethinkdb/
+
 
 ##
-# Nodejs
+# Aliases
 ##
-
-apt-add-repository ppa:chris-lea/node.js-devel
-apt-get update
-apt-get install -y nodejs
 
 echo "
 alias m='python -m maestro'
 alias docker='docker -H 127.0.0.1:4243'
-alias node='node --harmony'" > /home/vagrant/.bash_aliases
+" > /home/vagrant/.bash_aliases
 
 
