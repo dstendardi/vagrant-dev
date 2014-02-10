@@ -15,5 +15,6 @@ RUN sed -i 's/# discovery.zen.ping.multicast.enabled:.*/discovery.zen.ping.multi
 EXPOSE 9200
 EXPOSE 9300
 
+VOLUME ["/var/data/elasticsearch"]
 ENTRYPOINT ["/usr/share/elasticsearch/bin/elasticsearch"]
 CMD ["-f"]
