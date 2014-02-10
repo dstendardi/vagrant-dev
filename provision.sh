@@ -87,12 +87,6 @@ echo "" > /etc/default/docker
 service docker restart
 sleep 2
 
-#echo "DOCKER_OPTS=\"-H 127.0.0.1:4243\"" > /etc/default/docker
-
-# build docker images here
-docker build -t local/hbase-cdh4.1.2 /vagrant/docker/hbase-cdh4.1.2/
-docker build -t local/elasticsearch-0.20.6 /vagrant/docker/elasticsearch-0.20.6/
-
 
 ##
 # Aliases
