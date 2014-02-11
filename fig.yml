@@ -10,3 +10,7 @@ mysql:
   build: docker/mysql-5.5
   ports:
     - 3306:3306
+memcached:
+  build: docker/memcached-1.4
+  ports:
+    - 11211:11211

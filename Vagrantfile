@@ -12,6 +12,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision "docker"
   config.vm.network "forwarded_port", guest: 3306, host: 3306
+  config.vm.network "forwarded_port", guest: 11211, host: 11211
   config.vm.network "forwarded_port", guest: 9200, host: 9200
 
   config.vm.provision "shell", path: "provision.sh"
