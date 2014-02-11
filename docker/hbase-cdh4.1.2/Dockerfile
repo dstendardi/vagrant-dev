@@ -6,6 +6,5 @@ RUN wget -O - http://archive.cloudera.com/cdh4/ubuntu/precise/amd64/cdh/archive.
 RUN apt-get update
 RUN apt-get install -y hbase
 
-ENTRYPOINT ["hbase"]
-CMD ["master", "start"]
+CMD ["hbase", "master", "start"]
 
